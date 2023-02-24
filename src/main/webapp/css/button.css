@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.btn--orange  {
+  color: #fff;
+  background-color: #eb6100;
+  border: 0;
+  border-radius: 100vh;
+  margin-left: 0.5em;
+  margin-right: 0.2em;
+}
+.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}

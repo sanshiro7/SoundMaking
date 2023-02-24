@@ -1,0 +1,31 @@
+postgres=# \d loginuser
+                        テーブル"public.loginuser"
+    列     |        タイプ         | 照合順序 | Null 値を許容 | デフォルト
+-----------+-----------------------+----------+---------------+------------
+ id        | integer               |          | not null      |
+ username  | character varying(20) |          | not null      |
+ password  | character varying(20) |          | not null      |
+ groupname | character varying(5)  |          |               |
+インデックス:
+    "loginuser_pkey" PRIMARY KEY, btree (id)
+
+
+postgres=# \d soundsetting
+                         テーブル"public.soundsetting"
+       列       |        タイプ         | 照合順序 | Null 値を許容 | デフォルト
+----------------+-----------------------+----------+---------------+------------
+ id             | integer               |          | not null      |
+ soundname      | character varying(30) |          | not null      |
+ userid         | integer               |          | not null      |
+ effectorid1    | integer               |          | not null      |
+ effectoronoff1 | boolean               |          | not null      |
+ effectorid2    | integer               |          | not null      |
+ effectoronoff2 | boolean               |          | not null      |
+ effectorid3    | integer               |          | not null      |
+ effectoronoff3 | boolean               |          | not null      |
+ effectorid4    | integer               |          | not null      |
+ effectoronoff4 | boolean               |          | not null      |
+ effectorid5    | integer               |          | not null      |
+ effectoronoff5 | boolean               |          | not null      |
+インデックス:
+    "soundsetting_pkey" PRIMARY KEY, btree (id)
