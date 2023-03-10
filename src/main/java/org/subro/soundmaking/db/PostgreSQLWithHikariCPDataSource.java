@@ -29,10 +29,9 @@ public class PostgreSQLWithHikariCPDataSource {
         }
 
         HikariConfig conf = new HikariConfig();
-        conf.setJdbcUrl("jdbc:postgresql://UbuntuServer2204:5432/postgres");
+        conf.setJdbcUrl("jdbc:postgresql://UbuntuServer2204-1:5432/postgres");
         conf.setUsername("postgres");
         conf.setPassword("postgres");
-        //conf.setConnectionTestQuery("select 1");
 
         PostgreSQLWithHikariCPDataSource.hds = new HikariDataSource(conf);
     }
